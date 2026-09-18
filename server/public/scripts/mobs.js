@@ -15,7 +15,9 @@ const renderMobs = async () => {
       const bottomContainer = document.createElement('div');
       bottomContainer.classList.add('bottom-container');
 
-      topContainer.style.backgroundImage = `url(${mob.image})`;
+      const mobImage = document.createElement('img');
+      mobImage.src = mob.image;
+      topContainer.appendChild(mobImage);
 
       const name = document.createElement('h3');
       name.textContent = mob.name;
