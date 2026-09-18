@@ -24,7 +24,7 @@ const mobData = [
     "id": 3,
     "name": "Spider",
     "health": 16,
-    "behavior": "Hostile",
+    "behavior": "Neutral",
     "image": "https://minecraft.wiki/images/thumb/Spider_JE5_BE4.png/212px-Spider_JE5_BE4.png?b090e",
   },
   {
