@@ -6,21 +6,17 @@ const renderMobs = async () => {
 
   if (data) {
     data.map(mob => {
-      const card = document.createElement('div');
+      const card = document.createElement('article');
       card.classList.add('card');
 
-      const topContainer = document.createElement('div');
-      topContainer.classList.add('top-container');
-
-      const bottomContainer = document.createElement('div');
-      bottomContainer.classList.add('bottom-container');
+      const topContainer = document.createElement('header');
+      const bottomContainer = document.createElement('footer');
 
       const mobImage = document.createElement('img');
       mobImage.src = mob.image;
       topContainer.appendChild(mobImage);
 
       const moreInfo = document.createElement('div');
-      moreInfo.classList.add('more-info');
       bottomContainer.appendChild(moreInfo);
 
       const name = document.createElement('h3');
@@ -29,7 +25,6 @@ const renderMobs = async () => {
 
       const link = document.createElement('a');
       link.textContent = 'More Info';
-      link.setAttribute('role', 'button');
       link.href = `/mobs/${mob.id}`;
       moreInfo.appendChild(link);
 
