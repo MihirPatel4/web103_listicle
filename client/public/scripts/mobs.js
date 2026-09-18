@@ -19,15 +19,19 @@ const renderMobs = async () => {
       mobImage.src = mob.image;
       topContainer.appendChild(mobImage);
 
+      const moreInfo = document.createElement('div');
+      moreInfo.classList.add('more-info');
+      bottomContainer.appendChild(moreInfo);
+
       const name = document.createElement('h3');
       name.textContent = mob.name;
-      bottomContainer.appendChild(name);
+      moreInfo.appendChild(name);
 
       const link = document.createElement('a');
-      link.textContent = 'More Info >';
+      link.textContent = 'More Info';
       link.setAttribute('role', 'button');
       link.href = `/mobs/${mob.id}`;
-      bottomContainer.appendChild(link);
+      moreInfo.appendChild(link);
 
       card.appendChild(topContainer);
       card.appendChild(bottomContainer);
