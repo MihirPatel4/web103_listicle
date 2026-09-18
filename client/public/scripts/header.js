@@ -1,33 +1,30 @@
-const header = document.querySelector('header');
+const header = document.querySelector('nav');
 
-const headerContainer = document.createElement('div');
-headerContainer.className = 'header-container';
-
-const headerLeft = document.createElement('div');
-headerLeft.className = 'header-left';
+const headerLeft = document.createElement('ul');
 
 const headerLogo = document.createElement('img');
 headerLogo.src = '/logo.webp';
 
-const headerTitle = document.createElement('h1');
-headerTitle.textContent = 'The Minecraft Mob Index';
-
 headerLeft.appendChild(headerLogo);
+
+const headerTitle = document.createElement('li');
+const titleText = document.createElement('strong');
+titleText.textContent = 'The Minecraft Mob Index';
+
+headerTitle.appendChild(titleText);
 headerLeft.appendChild(headerTitle);
 
-const headerRight = document.createElement('div')
-headerRight.className = 'header-right'
+const headerRight = document.createElement('ul')
 
-const headerButton = document.createElement('button');
-headerButton.textContent = 'Home';
-    
-headerButton.addEventListener('click', function handleClick(event) {
-  window.location = '/';
-});
+const headerButton = document.createElement('li');
 
 headerRight.appendChild(headerButton);
 
-headerContainer.appendChild(headerLeft);
-headerContainer.appendChild(headerRight);
+const homeLink = document.createElement('a');
+homeLink.href = '/';
+homeLink.textContent = 'Home';
 
-header.appendChild(headerContainer);
+headerButton.appendChild(homeLink);
+
+header.appendChild(headerLeft);
+header.appendChild(headerRight);
