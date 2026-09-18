@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <script defer src="/scripts/header.js"></script>
-    <script defer src="/scripts/mobs.js"></script>
+    <script defer src="/scripts/mob.js"></script>
   </head>
   <body>
     <nav></nav>
-    <main id="main-content" class="grid"></main>
+    <main id="mob-content" class="container">
+      <div class="image-container">
+        <img id="image" src="">
+      </div>
+      <div class="mob-details">
+        <h2 id="name"></h2>
+        <p id="health"></p>
+        <p id="behavior"></p>
+      </div>
+    </main>
   </body>
 </html>
