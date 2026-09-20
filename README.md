@@ -4,7 +4,7 @@ Submitted by: **Mihir Patel**
 
 About this web app: **This app will display a list of Minecraft mobs. Each mob will have its own page that lists details about it.**
 
-Time spent: **2** hours
+Time spent: **3** hours
 
 ## Required Features
 
@@ -29,7 +29,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/dUDp252.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LICEcap
 
