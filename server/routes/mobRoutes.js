@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
   res.status(200).json(mobData);
 });
 
-router.get('/:mobId', (req, res) => {
+router.get('/:mobName', (req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, '../public/mob.html'));
 });
 
