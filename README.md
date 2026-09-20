@@ -2,7 +2,7 @@
 
 Submitted by: **Mihir Patel**
 
-About this web app: **This app will display a list of Minecraft mobs. Each mob will have its own page that lists details about it.**
+About this web app: **This app displays a list of Minecraft mobs. Each mob has its own page that lists its name, health points, and behavior.**
 
 Time spent: **3** hours
 
@@ -35,7 +35,7 @@ GIF created with LICEcap
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+Working with PicoCSS was a bit limiting so I had to add some of my own styles.
 
 ## License
 
