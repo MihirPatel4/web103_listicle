@@ -1,5 +1,5 @@
 const renderMob = async () => {
-  const requestedID = parseInt(window.location.href.split('/').pop());
+  const requestedName = window.location.href.split('/').pop();
 
   const response = await fetch('/mobs');
   const data = await response.json();
@@ -7,7 +7,7 @@ const renderMob = async () => {
   const mobContent = document.getElementById('mob-content');
 
   let mob;
-  mob = data.find(gift => gift.id === requestedID);
+  mob = data.find(mob => mob.name === requestedName);
 
   if (mob) {
     document.getElementById('image').src = mob.image;
