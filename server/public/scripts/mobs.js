@@ -25,7 +25,7 @@ const renderMobs = async () => {
 
       const link = document.createElement('a');
       link.textContent = 'More Info';
-      link.href = `/mobs/${mob.id}`;
+      link.href = `/mobs/${mob.name}`;
       moreInfo.appendChild(link);
 
       card.appendChild(topContainer);
