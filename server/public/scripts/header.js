@@ -1,4 +1,5 @@
 const header = document.querySelector('nav');
+header.classList.add('header');
 
 const headerLeft = document.createElement('ul');
 
