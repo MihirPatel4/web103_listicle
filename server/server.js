@@ -1,7 +1,8 @@
 import express from 'express';
+import './config/dotenv.js';
 import mobsRouter from './routes/mobRoutes.js';
 
-const PORT = 3001;
+const PORT = process.env.PGPORT || 3001;
 const app = express();
 
 app.use(express.static('./public'));
